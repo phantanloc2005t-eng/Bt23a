@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Click Speed Test Game</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎯 CLICK SPEED TEST</h1>
+
+        <p class="description">
+            Kiểm tra tốc độ phản xạ click chuột của bạn!
+        </p>
+
+        <!-- Thông tin người chơi -->
+        <div class="player-section">
+            <button id="playerBtn">👤 Người chơi</button>
+
+            <p id="playerInfo"></p>
+        </div>
+
+        <!-- Chọn thời gian -->
+        <div class="time-setting">
+            <label for="timeInput">⏱ Chọn thời gian chơi:</label>
+
+            <input
+                type="number"
+                id="timeInput"
+                value="30"
+                min="1"
+                max="300"
+            >
+
+            <span>giây</span>
+        </div>
+
+        <!-- Thông tin trò chơi -->
+        <div class="game-info">
+
+            <div class="info-box">
+                <h3>Điểm số</h3>
+                <span id="score">0</span>
+            </div>
+
+            <div class="info-box">
+                <h3>Thời gian</h3>
+                <span id="timer">30</span>
+                <span class="unit">giây</span>
+            </div>
+
+        </div>
+
+        <!-- Khu vực chơi -->
+        <div id="arena">
+
+            <button id="target"></button>
+
+            <div id="message">
+                Nhấn Bắt đầu để chơi!
+            </div>
+
+        </div>
+
+        <!-- Các nút chức năng -->
+        <div class="button-group">
+
+            <button id="startBtn">
+                Bắt đầu trò chơi
+            </button>
+
+            <button id="colorBtn">
+                🎨 Đổi màu nền
+            </button>
+
+        </div>
+
+        <p id="result"></p>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
